@@ -1,0 +1,28 @@
+11.	Using a while loop write a Java program to output all the prime numbers 0 to 100. (3 marks) 
+public class Prime {
+    public static void main(String[] args) {
+        System.out.println("Prime numbers from 0 to 100:");
+        int number = 2;
+
+        while (number <= 100) {
+            if (isPrime(number)) {
+                System.out.print(number + " ");
+            }
+            number++;
+        }
+    }
+
+    
+    private static boolean isPrime(int num) {
+        if (num <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
