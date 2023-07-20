@@ -1,0 +1,18 @@
+10.	Using a do…while loop write a program that calculates the sum of integers input by a user. The program should allow the user to enter as many numbers as possible, until the user enters 0. (4 marks) 
+import java.util.Scanner;
+
+public class Sum {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int sum = 0;
+        int num;
+
+        do {
+            System.out.print("Enter an integer (enter 0 to stop): ");
+            num = input.nextInt();
+            sum += num;
+        } while (num != 0);
+
+        System.out.println("The sum of the entered integers is: " + sum);
+    }
+}
