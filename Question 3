@@ -1,0 +1,9 @@
+3.	Explain in your own words, the use of the different types of branching statements in java  (2 marks) 
+There are three main types of branching statements in Java: if, switch, and loop control statements (which include break, continue, and return). Here's an explanation of each:
+
+1.If statement:
+The if statement is used for conditional branching. It allows you to specify a condition, and the code block associated with the if statement will only be executed if the condition evaluates to true. If the condition is false, the code block will be skipped, and the program will continue to the next line of code after the if block.
+
+2.Switch statement:
+The switch statement is used for multi-way branching based on the value of an expression. It provides a concise way to handle multiple cases and execute different code blocks based on the value of the expression. Each case represents a possible value, and the switch statement jumps to the corresponding case when it matches the value of the expression.
+
