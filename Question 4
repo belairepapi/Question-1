@@ -1,0 +1,31 @@
+4.	Write a Java program using Switch…Case to determine the maximum number given two numbers from a user. (4 marks) 
+import java.util.Scanner;
+
+public class Switch{
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int num1 = input.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = input.nextInt();
+
+        int max;
+
+        
+        switch (num1 > num2 ? 1 : (num1 < num2 ? 2 : 0)) {
+            case 1:
+                max = num1;
+                break;
+            case 2:
+                max = num2;
+                break;
+            default:
+                max = num1; // or num2, since they are equal
+                break;
+        }
+
+        System.out.println("The maximum number is: " + max);
+    }
+}
