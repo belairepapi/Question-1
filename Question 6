@@ -1,0 +1,10 @@
+
+6.	Using the for loop, write a program that outputs the numbers: 12,14,16,18,20,22,24,26,28. (3 marks) 
+public class Numbers {
+    public static void main(String[] args) {
+        
+        for (int num = 12; num <= 28; num += 2) {
+            System.out.print(num + " ");
+        }
+    }
+}
