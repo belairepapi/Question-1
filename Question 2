@@ -1,0 +1,27 @@
+2.	Write a java code to demonstrate the use of labeled and unlabelled break statement. (5 marks) 
+public class BreakStatement {
+
+    public static void main(String[] args) {
+        // Unlabeled break statement
+        System.out.println("Unlabeled break statement:");
+        for (int i = 1; i <= 5; i++) {
+            if (i == 4) {
+                break; // This will exit the loop when i equals 4
+            }
+            System.out.println("i = " + i);
+        }
+        System.out.println("Loop ended.\n");
+
+        // Labeled break statement
+        System.out.println("Labeled break statement:");
+        outerLoop: for (int i = 1; i <= 3; i++) {
+            for (int j = 1; j <= 3; j++) {
+                if (i == 2 && j == 2) {
+                    break outerLoop; 
+                }
+                System.out.println("i = " + i + ", j = " + j);
+            }
+        }
+        System.out.println("Both loops ended.");
+    }
+}
