@@ -1,0 +1,11 @@
+8.	Using the do…while loop, write a program that outputs the even numbers from 12 to 50  (3 marks) 
+public class EvenNumbers {
+    public static void main(String[] args) {
+        int num = 12;
+
+            do {
+            System.out.print(num + " ");
+            num += 2;
+        } while (num <= 50);
+    }
+}
